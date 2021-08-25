@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loopMachine</title>
+    <link rel="stylesheet" href="./css/loopMachine.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div class="top-container">
+        <div class="title-container">
+            <h1>Loop Machine</h1>
+            <h2>Create your own Sound</h2>
+        </div>
+    </div>
+
+    <div class="btns-container">
+        <button class="btn" id="stop-all-btn" onclick="stopCurrentActivePlayers()">stop all active players</button>
+        <button class="btn" id="play-all-btn" onclick="startLastActivePlayers()">play last active players</button>
+        <button class="btn" onclick="record(event)">record</button>
+        <button class="btn" onclick="playRecordSession()">play session</button>
+    </div>
+
+    <div class="players-container">
+
+        <div class="player-container" id="player-container-1" onclick="onPlayerClickHandler(event)">
+            <audio class="player off" id="player-1" loop src="./sounds/120_future_funk_beats_25.mp3"></audio>
+        </div>
+
+        <div class="player-container" id="player-container-2" onclick="onPlayerClickHandler(event)">
+            <audio class="player off" id="player-2" loop src="./sounds/120_stutter_breakbeats_16.mp3"></audio>
+        </div>
+
+        <div class="player-container" id="player-container-3" onclick="onPlayerClickHandler(event)">
+            <audio class="player off" id="player-3" loop src="./sounds/Bass%20Warwick%20heavy%20funk%20groove%20on%20E%20120%20BPM.mp3"></audio>
+        </div>
+
+        <div class="player-container" id="player-container-4" onclick="onPlayerClickHandler(event)">
+            <audio class="player off" id="player-4" loop src="./sounds/electric%20guitar%20coutry%20slide%20120bpm%20-%20B.mp3"></audio>
+        </div>
+
+        <div class="player-container" id="player-container-5" onclick="onPlayerClickHandler(event)">
+            <audio class="player off" id="player-5" loop src="./sounds/FUD_120_StompySlosh.mp3"></audio>
+        </div>
+
+        <div class="player-container" id="player-container-6" onclick="onPlayerClickHandler(event)">
+            <audio class="player off" id="player-6" loop src="./sounds/GrooveB_120bpm_Tanggu.mp3"></audio>
+        </div>
+
+        <div class="player-container" id="player-container-7" onclick="onPlayerClickHandler(event)">
+            <audio class="player off" id="player-7" loop src="./sounds/MazePolitics_120_Perc.mp3"></audio>
+        </div>
+
+        <div class="player-container" id="player-container-8" onclick="onPlayerClickHandler(event)">
+            <audio class="player off" id="player-8" loop src="./sounds/PAS3GROOVE1.03B.mp3"></audio>
+        </div>
+
+        <div class="player-container" id="player-container-9" onclick="onPlayerClickHandler(event)">
+            <audio class="player off" id="player-9" loop src="./sounds/SilentStar_120_Em_OrganSynth.mp3"></audio>
+        </div>
+
+    </div>
+
+<script src="./javascript/loopMachine.js"></script>
+</body>
+</html>
